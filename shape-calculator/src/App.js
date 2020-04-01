@@ -6,16 +6,30 @@ import ShapeDisplay from './components/ShapeDisplay'
 
 function App() {
 
-  const [shape, setShape] = useState(null)
-  const [width, setWidth] = useState(null)
-  const [height, setHeight] = useState(null)
-  const [color, setColor] = useState(null)
+  const [shape, setShape] = useState('')
+  const [width, setWidth] = useState('')
+  const [height, setHeight] = useState('')
+  const [color, setColor] = useState('#ff2600')
 
 
   return (
     <div className="App">
-        <ShapeForm shape={shape} setShape={setShape}/>
-        <ShapeDisplay shape={shape}/>
+        <ShapeForm 
+          shape={shape} 
+          setShape={setShape} 
+          width={width} 
+          setWidth={setWidth} 
+          heigth={height} 
+          setHeight={setHeight} 
+          color={color}
+          setColor={setColor}
+          />
+        <ShapeDisplay 
+          shape={shape} 
+          width={width} 
+          height={height} 
+          color={color}
+        />
     </div>
   );
 }
