@@ -1,8 +1,11 @@
 import React from 'react'
 
-const ShapeDisplay = () => {
+const ShapeDisplay = (props) => {
     return (
-        <div>
+        <div className='shape-display-container'>
+            <div className={props.shape}>
+
+            </div>
         </div>
     )
 }

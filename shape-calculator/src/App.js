@@ -14,7 +14,9 @@ function App() {
 
   return (
     <div className="App">
-      
+        Shape Calculator!
+        <ShapeForm />
+        <ShapeDisplay shape={shape}/>
     </div>
   );
 }
